@@ -1,0 +1,5 @@
+1.When you have a form in HTML with a submit button, the default behavior when the submit button is clicked 
+is to send a request to the server and reload the page. This is standard HTML form behavior designed for server-side form handling.
+However, in a React application, we often handle form submission on the client side using JavaScript. 
+We can use the onClick or onSubmit event handlers to process the form data without causing a page reload.
+ To prevent the default form submission behavior, we call e.preventDefault() within our event handler.
