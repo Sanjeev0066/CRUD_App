@@ -14,3 +14,13 @@ export const create = async (req, res) => {
     res.status(500).json({ error: error });
   }
 };
+
+export const getAll = async (req, res) => {
+  try {
+    const students = await User.find();
+    res.json(students);
+    res.status(200);
+  } catch (error) {
+    res.status(500).json({ error: error });
+  }
+};

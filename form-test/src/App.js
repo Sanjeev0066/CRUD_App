@@ -2,28 +2,25 @@ import "./App.css";
 import HomePage from "./Components/HomePage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Form from "./Components/Form";
+import Update from "./Components/Update.jsx";
+import Delete from "./Components/Delete.jsx";
 function App() {
   const route = createBrowserRouter([
     {
       path: "/",
-      element: (
-        <div>
-          <HomePage />
-          <Form />
-        </div>
-      ),
+      element: <HomePage />,
     },
     {
       path: "/add",
-      element: "user add page",
+      element: <Form />,
     },
     {
       path: "/update",
-      element: "user update page",
+      element: <Update />,
     },
     {
       path: "/delete",
-      element: "delete user page",
+      element: <Delete />,
     },
   ]);
 
